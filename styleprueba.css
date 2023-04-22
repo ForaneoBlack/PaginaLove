@@ -1,0 +1,177 @@
+/* Estilo del carrusel 
+.carrusel-container {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #fde0e8;
+}
+
+.carrusel-slides {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carrusel-slide {
+  width: 100%;
+  flex-shrink: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}*/
+
+/* Estilo de las tarjetas de imagen 
+.carrusel-slide img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}*/
+
+/* Estilo de los botones del carrusel 
+.carrusel-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carrusel-button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d34661;
+  margin: 0 5px;
+  cursor: pointer;
+}*/
+
+/* Estilo de las tarjetas de imagen 
+.carrusel-slide img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}*/
+
+/* Estilo del fondo 
+body {
+  background-color: #fde0e8;
+  padding: 50px;
+}*/
+
+
+
+
+.carrusel-container {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  background-color: #ff6b8b;
+}
+
+.carrusel {
+  max-width: 500px;
+  /* ancho máximo de 500px para el carrusel */
+  margin: 0px 0px;
+  overflow: hidden;
+  border-radius: 10px;
+  /* redondear los bordes */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  /* sombra */
+}
+.carrusel-container {
+  width: 100%;
+  margin: 0px 0px;
+}
+
+
+.carrusel-container h2{
+  font-size: 45px;
+  line-height: 38px;
+  padding-bottom: 50px;
+  opacity: .9;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  justify-content: center;
+
+}
+
+.carrusel img {
+  object-fit: cover;
+  height: 300px;
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+  transition: .3s ease-in-out;
+
+}
+
+@media(min-width: 768px) {
+  .carrusel {
+    margin: auto;
+  }
+}
+
+.carrusel-inner {
+  display: flex;
+}
+
+.carrusel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-slide {
+  flex: 0 0 100%;
+}
+
+.carrusel-slide img {
+  width: 100%;
+  height: 500px;
+}
+
+.carrusel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  /* fondo del botón */
+  border: 0;
+  border-radius: 30px;
+  color: #000;
+  font-size: 24px;
+  padding: 10px;
+  z-index: 4;
+  cursor: pointer;
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.carrusel-btn svg {
+  width: 12px;
+  height: 100%;
+  color: rgba(0, 0, 0, .7);
+}
+
+.carrusel-btn :focus {
+  outline: 0;
+}
+
+.carrusel-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* cambio de color al pasar el cursor */
+}
+
+.carrusel-btn-prev {
+  left: 0;
+}
+
+.carrusel-btn-next {
+  right: 0;
+}

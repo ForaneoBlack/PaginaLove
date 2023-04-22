@@ -1,0 +1,337 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  /* Sección de héroe */
+  .hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffdde1; /* Fondo animado */
+    background-image: linear-gradient(to right, #ffafbd, #ffdde1); /* Fondo animado */
+    overflow: hidden;
+    }
+    
+    .hero-container {
+    max-width: 1200px;
+    padding: 0 1rem;
+    text-align: center;
+    }
+    
+    .hero-image {
+    width: 50%;
+    height: 50%;
+    max-width: 600px;
+    }
+    
+    .hero-title {
+    font-size: 3rem;
+    color: #ff527b;
+    margin-bottom: 1rem;
+    }
+    
+    .hero-subtitle {
+    font-size: 1.5rem;
+    color: #ff6b8b;
+    }
+    
+    /* Sección de carrusel de imágenes */
+
+    
+
+.carrusel-container {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    height: 100vh;
+    max-width: 100%;
+    align-items: center;
+    background-color: #ff6b8b;
+  }
+  
+  .carrusel {
+    max-width: 500px;
+    /* ancho máximo de 500px para el carrusel */
+    margin: 0px 0px;
+    overflow: hidden;
+    border-radius: 10px;
+    /* redondear los bordes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* sombra */
+  }
+  .carrusel-container {
+    width: 100%;
+    margin: 0px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .carrusel-container h2{
+    font-size: 45px;
+    line-height: 38px;
+    padding-bottom: 50px;
+    opacity: .9;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+  
+  }
+  
+  .carrusel img {
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+    transition: .3s ease-in-out;
+  
+  }
+  
+  @media(min-width: 768px) {
+    .carrusel {
+      margin: auto;
+    }
+  }
+  
+  .carrusel-inner {
+    display: flex;
+  }
+  
+  .carrusel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carrusel-slide {
+    flex: 0 0 100%;
+  }
+  
+  .carrusel-slide img {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .carrusel-btn {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    /* fondo del botón */
+    border: 0;
+    border-radius: 30px;
+    color: #000;
+    font-size: 24px;
+    padding: 10px;
+    z-index: 4;
+    cursor: pointer;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .carrusel-btn svg {
+    width: 12px;
+    height: 100%;
+    color: rgba(0, 0, 0, .7);
+  }
+  
+  .carrusel-btn :focus {
+    outline: 0;
+  }
+  
+  .carrusel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* cambio de color al pasar el cursor */
+  }
+  
+  .carrusel-btn-prev {
+    left: 0;
+  }
+  
+  .carrusel-btn-next {
+    right: 0;
+  }
+
+    /* Sección de dedicatoria */
+    .dedication {
+    padding: 3rem 0;
+    text-align: center;
+    }
+    
+    .dedication-title {
+    font-size: 2rem;
+    color: #ff527b;
+    margin-bottom: 1rem;
+    }
+    
+    .dedication-text {
+    font-size: 1.2rem;
+    color: #ff6b8b;
+    }
+    
+    /* Sección de foto y frase */
+    .photo-and-quote {
+    padding: 3rem 0;
+    background-image: url(img/fondo1.jpg);
+
+    }
+    
+    .photo-and-quote-container {
+    max-width: 90%;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .photo-and-quote-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    
+    .photo-and-quote-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    }
+    
+    .photo-and-quote-text {
+    font-size: 1.5rem;
+    color: #ff6b8b;
+    text-align: center;
+    max-width: 600px;
+    }
+    
+    /* Sección de carrusel de imágenes vertical */
+    .vertical-carousel {
+    padding: 3rem 0;
+    background-color: #f7e7ea;
+    overflow-y: scroll;
+    }
+    
+    .vertical-carousel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    }
+    
+    .vertical-carousel-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    }
+    
+    /* Sección de video animado*/
+    .video {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffdde1; 
+    /* Fondo animado */
+    background-image: linear-gradient(to right, #ffafbd, #ffdde1); 
+    /* Fondo animado */
+    overflow: hidden;
+    }
+    
+    .video-container {
+    max-width: 1200px;
+    padding: 0 1rem;
+    text-align: center;
+    }
+    
+    .video-content {
+        max-width: 600px;
+    
+    }
+
+.video-title {
+font-size: 3rem;
+color: #ff527b;
+margin-bottom: 1rem;
+}
+
+.video-subtitle {
+font-size: 1.5rem;
+color: #ff6b8b;
+}
+
+/* Efecto Parallax */
+.parallax {
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/* Animaciones */
+@keyframes backgroundAnimation {
+0% {
+transform: translateY(-50%);
+}
+100% {
+transform: translateY(50%);
+}
+}
+
+.hero {
+animation: backgroundAnimation 3s infinite alternate;
+}
+
+.video {
+animation: backgroundAnimation 10s infinite alternate-reverse;
+}
+
+/* Estilos adicionales */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+.hero-title{
+font-size: 2rem;
+}
+
+.hero-subtitle {
+font-size: 1rem;
+}
+
+.dedication-title {
+font-size: 1.5rem;
+}
+
+.dedication-text {
+font-size: 1rem;
+}
+
+.photo-and-quote-text {
+font-size: 1rem;
+}
+
+.video-title {
+font-size: 2rem;
+}
+
+.video-subtitle {
+font-size: 1rem;
+}
+}
