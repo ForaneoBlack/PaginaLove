@@ -312,9 +312,6 @@ body {
   }
 }
 
-.hero {
-  animation: backgroundAnimation 15s;
-}
 
 .video {
   animation: backgroundAnimation 10s alternate-reverse;
